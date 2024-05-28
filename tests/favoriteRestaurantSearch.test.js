@@ -109,7 +109,6 @@ describe('Searching restaurants', () => {
     });
 
     describe('When query is empty', () => {
-
         it('should capture the query as empty', () => {
             favoriteRestaurants.getAllRestaurant.mockImplementation(() => []);
             searchRestaurants(' ');
@@ -126,7 +125,6 @@ describe('Searching restaurants', () => {
     });
 
     describe('When no favorite restaurants could be found', () => {
-
         it('should show the empty message', (done) => {
             document.getElementById('lists').addEventListener('lists:updated', () => {
                 expect(document.querySelectorAll('.restaurant-not-found').length).toEqual(1);
@@ -143,7 +141,8 @@ describe('Searching restaurants', () => {
                 expect(document.querySelectorAll('.restaurants-item').length).toEqual(0);
                 done();
             });
-            favoriteRestaurants.searchRestaurants.mockImplementation((query) => [])
+            // eslint-disable-next-line no-unused-vars
+            favoriteRestaurants.searchRestaurants.mockImplementation((query) => []);
             searchRestaurants('restaurant a');
         });
     });

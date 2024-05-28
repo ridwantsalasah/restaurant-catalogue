@@ -12,13 +12,13 @@ if (!fs.existsSync(destination)) {
 fs.readdirSync(target)
     .forEach((image) => {
         sharp(`${target}/${image}`)
-            .resize(800)
+            .resize(600)
             .toFile(path.resolve(__dirname, `${destination}/${image.split('.')
                 .slice(0, -1)
                 .join('.')}-large.jpg`));
 
         sharp(`${target}/${image}`)
-            .resize(480)
+            .resize(200, 100)
             .toFile(path.resolve(__dirname, `${destination}/${image.split('.')
                 .slice(0, -1)
                 .join('.')}-small.jpg`));

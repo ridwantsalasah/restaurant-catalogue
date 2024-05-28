@@ -1,7 +1,6 @@
 import FavoriteRestaurantShowInitiator from '../src/scripts/views/pages/liked-restaurant/favorite-restaurant-show-initiator.js';
 import FavoriteRestaurantView from '../src/scripts/views/pages/liked-restaurant/favorite-restaurant-view.js';
 
-
 describe('Showing all favorite restaurants', () => {
     let view;
 

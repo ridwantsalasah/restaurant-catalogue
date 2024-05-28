@@ -2,7 +2,8 @@ class FooterBar extends HTMLElement {
     connectedCallback() {
         this.render();
     }
-    render(){
+
+    render() {
         this.innerHTML = `
             <div id="footer" class="footer-bar">
                 <p>Ridhwan Tsalasah P&#169; 2024, Dicoding</p>
@@ -11,4 +12,4 @@ class FooterBar extends HTMLElement {
     }
 }
 
-customElements.define("footer-bar", FooterBar);
+customElements.define('footer-bar', FooterBar);

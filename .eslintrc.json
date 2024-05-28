@@ -31,7 +31,6 @@
         "no-await-in-loop": 0,
         "no-undef": 0,
         "eqeqeq":0,
-        "max-len":0,
-        "next-line func-names": "none"
+        "max-len":0
     }
 }

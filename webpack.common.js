@@ -105,6 +105,13 @@ module.exports = {
                         cacheName: 'therestaurantdb-image-api',
                     },
                 },
+                {
+                    urlPattern: ({ url }) => url.href.startsWith('https://restaurant-api.dicoding.dev/detail/'),
+                    handler: 'StaleWhileRevalidate',
+                    options: {
+                        cacheName: 'therestaurantdb-detail-api',
+                    },
+                },
             ],
         }),
         new ImageminWebpackPlugin({

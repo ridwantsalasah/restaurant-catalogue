@@ -115,7 +115,7 @@ button{
   text-align: center;
   min-height: 500px;
   width: 100%;
-  background-image:linear-gradient(rgba(78, 57, 57, 0.7),rgba(4,9,30,0.7)), url("../public/images/heros/hero-image_4-max.jpg");
+  background-image:linear-gradient(rgba(78, 57, 57, 0.7),rgba(4,9,30,0.7)), url("../public/images/heros/hero-image_4-large.jpg");
   background-position: center;
 }
 .hero-desc-restaurant{
@@ -275,7 +275,7 @@ button{
   outline: none;
   border: none;
   background-color: transparent;
-  margin-top: 8px;
+  margin-top: 30px;
   margin-right: 10px;
 }
 
@@ -320,11 +320,12 @@ button{
 .restaurant-img-detail{
   
   width: 100%;
-  max-height: 800px;
+  max-height: 700px;
 }
 .restaurant-img-detail img{
   width: 100%;
   height: 100%;
+  margin-top: 3vh;
   object-fit: cover;
   border-radius: 10px;
   align-items: center;
@@ -336,7 +337,8 @@ button{
 .restaurant-detail .restaurant-name-detail{
   font-size: 40px;
   font-weight: bold;
-  padding: 15px 0px;
+  margin-top: 1vh;
+  padding: 20px 0px;
   color: rgb(231, 185, 84);
 }
 .restaurant-detail p{

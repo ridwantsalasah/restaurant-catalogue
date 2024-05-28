@@ -1,6 +1,7 @@
 import CONFIG from '../../globals/config.js';
 
-const large = 'large/';
+// eslint-disable-next-line no-unused-vars
+const medium = 'medium/';
 
 const createRestaurantDetailTemplate = (restaurant) => `
     <div class="detail">
@@ -11,8 +12,8 @@ const createRestaurantDetailTemplate = (restaurant) => `
                 </div>
         <picture>
             <source class="lazyload" media="(max-width: 600px)" data-srcset="${`${CONFIG.BASE_IMAGE_URL}small/${restaurant.pictureId}`}">
-            <source class="lazyload" media="(max-width: 1200px)" data-srcset="${`${CONFIG.BASE_IMAGE_URL}medium/${restaurant.pictureId}`}">
-            <img class="restaurant-detail-image lazyload" src="${restaurant.pictureId ? CONFIG.BASE_IMAGE_URL + large + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="Restoran ${restaurant.name || '-'} Kota ${restaurant.city}">
+            <source class="lazyload" media="(max-width: 1200px)" data-srcset="${CONFIG.BASE_IMAGE_URL + medium + restaurant.pictureId}">
+            <img class="restaurant-detail-image lazyload" data-src="${restaurant.pictureId ? CONFIG.BASE_IMAGE_URL + medium + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="Restoran ${restaurant.name || '-'} Kota ${restaurant.city}">
         </picture>
             </div>
             <div class="restaurant-detail">
@@ -92,8 +93,8 @@ const createRestaurantItemTemplate = (restaurant) => `
         <p class="location">Kota. ${restaurant.city || '-'}</p>
         <picture>
             <source class="lazyload" media="(max-width: 600px)" data-srcset="${`${CONFIG.BASE_IMAGE_URL}small/${restaurant.pictureId}`}">
-            <source class="lazyload" media="(max-width: 1200px)" data-srcset="${`${CONFIG.BASE_IMAGE_URL}medium/${restaurant.pictureId}`}">
-            <img class="restaurant-item_image lazyload" src="${restaurant.pictureId ? CONFIG.BASE_IMAGE_URL + large + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="Restoran ${restaurant.name || '-'} Kota ${restaurant.city}">
+            <source class="lazyload" media="(max-width: 1200px)" data-srcset="${CONFIG.BASE_IMAGE_URL + medium + restaurant.pictureId}">
+            <img class="restaurant-item_image lazyload" data-src="${restaurant.pictureId ? CONFIG.BASE_IMAGE_URL + medium + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="Restoran ${restaurant.name || '-'} Kota ${restaurant.city}">
         </picture>
         <div class="restaurant-item-content">
             <p class="restaurant-item-date">Rating : <i class="fa-solid fa-star"></i><span> ${restaurant.rating || '-'}</span></p>

@@ -39,7 +39,7 @@ const FavoriteRestaurantIdb = {
 
             return jammedRestaurantName.indexOf(jammedQuery) !== -1;
         });
-    }, 
+    },
 };
 
 export default FavoriteRestaurantIdb;

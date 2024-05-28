@@ -53,6 +53,9 @@
   font-size: 20px;
   line-height: normal;
   }
+  .hero-restaurant{
+    background-image:linear-gradient(rgba(78, 57, 57, 0.7),rgba(4,9,30,0.7)), url("../public/images/heros/hero-image_4-small.jpg");
+  }
   .hero-restaurant button{
     width: 140px;
     font-size: 1rem;
@@ -195,6 +198,9 @@
     }
     .hero-desc {
       font-size: 20px;
+    }
+    .hero-restaurant{
+      background-image:linear-gradient(rgba(78, 57, 57, 0.7),rgba(4,9,30,0.7)), url("../public/images/heros/hero-image_4-large.jpg");
     }
     .content-restaurants {
       width: 95%;
